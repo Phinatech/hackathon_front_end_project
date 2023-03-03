@@ -8,6 +8,7 @@ import { RxPerson, RxTarget } from "react-icons/rx";
 import { IoRocketOutline } from "react-icons/io5";
 // import { Link } from "react-router-dom";
 import MainDetailDashBoard from "../Routes/MainDetailDashBoard";
+import { NavLink } from "react-router-dom";
 
 const DashBoard = () => {
   // menu menuSidebar functions 👇👇
@@ -60,7 +61,8 @@ const DashBoard = () => {
           </Menu>
           <Logo src={logo} />
         </MenuWrapper>
-        <Hold onClick={homeRoute}>
+   
+    <Hold onClick={homeRoute}>
           <SideBarProps
             paddingleft={home ? "" : "value"}
             bg={home ? "" : "value"}
@@ -71,6 +73,7 @@ const DashBoard = () => {
             icon={<ImHome2 />}
           />
         </Hold>
+   
         <Hold onClick={savingsRoute}>
           <SideBarProps
             paddingleft={savings ? "" : "value"}
